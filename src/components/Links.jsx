@@ -3,7 +3,12 @@ import ReactTooltip from 'react-tooltip';
 
 import Share from './Share';
 import useCopyToClipboard from './useCopyToClipboard';
+import { motion } from 'framer-motion';
 
+const variants = {
+  open: { opacity: 1, scale: 1.5 },
+  closed: { opacity: 0 },
+};
 
 const Links = (props) => {
   const [anim, setAnim] = useState(true);
@@ -33,9 +38,9 @@ const Links = (props) => {
           <div className="flex items-center h-full overflow-clip w-full gap-3 justify-center">
             <div
               
-              className={`flex justify-end   h-full  bg-green-300 gap-1 `}
+              className={`flex justify-end   h-full  gap-1 `}
             >
-              <span className={`text-[#101828] flex justify-center bg-gray-400 `}>
+              <span className={`text-[#101828] flex justify-center `}>
                 <span className="text2 font-bold"> {props.name}</span>
               </span>
             </div>

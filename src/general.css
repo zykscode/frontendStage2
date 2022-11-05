@@ -1,24 +1,24 @@
-:root{
+:root {
   font-family: 'Inter', sans-serif;
-                                                
+
 }
 
-.text1{
-font-size: 18px;
-font-weight: 700;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: center;
+.text1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
-.text2{
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: center;
-Font-style: Medium;
-Vertical-align: Center;
+.text2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  Font-style: Medium;
+  Vertical-align: Center;
 }
 
 .screen-reader-text {
@@ -33,18 +33,67 @@ Vertical-align: Center;
   width: 1px;
   word-wrap: normal !important;
 }
-.text3{
-font-size: 12px;
-font-weight: 200;
-line-height: 12px;
-letter-spacing: 0em;
-text-align: center;
-Vertical-align: Center;
+
+.text3 {
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  Vertical-align: Center;
 }
 
-.text4{
-font-size: 14px;
+.text4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.textBold {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+}
+.lastText{
+font-family: Inter;
+font-size: 16px;
 font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.buttonText{
+font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.textLg {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.inputText{
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: left;

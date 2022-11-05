@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 
 import Share from './Share';
 import useCopyToClipboard from './useCopyToClipboard';
 
 
-const Links = (props) => {
+const Contacts = (props) => {
   const [anim, setAnim] = useState(true);
 
   const handleAnim = (e) => {
@@ -16,12 +17,12 @@ const Links = (props) => {
     const [ value, copy] = useCopyToClipboard();
   return (
     <>
-      <a
+    
+      <Link
+        to='/contact'
         id={props.id}
         href={props.link}
         title={props.subtext}
-        target="_blank"
-        onClick={handleAnim}
         data-tip={props.subtext}
         className={` overflow-clip rounded-lg flex justify-center h-[76px] ${
           anim ? 'focus:bg-[#FCFCFD]' : 'focus:bg-[#98A2B3] '
@@ -52,7 +53,7 @@ const Links = (props) => {
             </div>
           </div>
         }
-      </a>
+      </Link>
       <ReactTooltip
         place="bottom"
         multiline={true}
@@ -63,4 +64,4 @@ const Links = (props) => {
   );
 };
 
-export default Links;
+export default Contacts;
